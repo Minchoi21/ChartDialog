@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <chartwindow.h>
 
 namespace Ui {
 class MainWindow;
@@ -17,6 +18,12 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    ChartWindow *p_chart_window;
+
+    void connectSignalSlot();
+
+public slots:
+    void openChartWindow();
 };
 
 #endif // MAINWINDOW_H
