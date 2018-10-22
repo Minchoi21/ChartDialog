@@ -15,11 +15,13 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     chartwindow.cpp \
-    qcustomplot.cpp
+    qcustomplot.cpp \
+    datacharts.cpp
 
 HEADERS  += mainwindow.h \
     chartwindow.h \
-    qcustomplot.h
+    qcustomplot.h \
+    datacharts.h
 
 FORMS    += mainwindow.ui \
     chartwindow.ui

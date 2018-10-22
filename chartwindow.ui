@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>640</width>
-    <height>480</height>
+    <width>768</width>
+    <height>576</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -26,68 +26,8 @@
    </item>
    <item row="1" column="0">
     <layout class="QGridLayout" name="gridLayout">
-     <item row="1" column="9">
-      <widget class="QLabel" name="label_21">
-       <property name="text">
-        <string>0</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="9">
-      <widget class="QLabel" name="label_19">
-       <property name="text">
-        <string>Sped Min.</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="10">
-      <widget class="QLabel" name="label_20">
-       <property name="text">
-        <string>StallOnStart</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="0">
-      <widget class="QLabel" name="label">
-       <property name="text">
-        <string>Speed Max.</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QLabel" name="label_3">
-       <property name="text">
-        <string>Rounds</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="2">
-      <widget class="QLabel" name="label_6">
-       <property name="text">
-        <string>Kp</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="0">
-      <widget class="QLabel" name="label_2">
+     <item row="1" column="4">
+      <widget class="QLabel" name="labelKpr">
        <property name="text">
         <string>0</string>
        </property>
@@ -97,7 +37,7 @@
       </widget>
      </item>
      <item row="1" column="1">
-      <widget class="QLabel" name="label_5">
+      <widget class="QLabel" name="labelRounds">
        <property name="text">
         <string>0</string>
        </property>
@@ -107,7 +47,7 @@
       </widget>
      </item>
      <item row="1" column="2">
-      <widget class="QLabel" name="label_4">
+      <widget class="QLabel" name="labelKp">
        <property name="text">
         <string>0</string>
        </property>
@@ -117,7 +57,7 @@
       </widget>
      </item>
      <item row="1" column="8">
-      <widget class="QLabel" name="label_18">
+      <widget class="QLabel" name="labelDuty">
        <property name="text">
         <string>0</string>
        </property>
@@ -127,7 +67,7 @@
       </widget>
      </item>
      <item row="1" column="10">
-      <widget class="QLabel" name="label_22">
+      <widget class="QLabel" name="labelStallOnStart">
        <property name="text">
         <string>0</string>
        </property>
@@ -137,7 +77,7 @@
       </widget>
      </item>
      <item row="1" column="6">
-      <widget class="QLabel" name="label_17">
+      <widget class="QLabel" name="labelRPM">
        <property name="text">
         <string>0</string>
        </property>
@@ -147,17 +87,7 @@
       </widget>
      </item>
      <item row="1" column="5">
-      <widget class="QLabel" name="label_16">
-       <property name="text">
-        <string>0</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="4">
-      <widget class="QLabel" name="label_15">
+      <widget class="QLabel" name="labelI">
        <property name="text">
         <string>0</string>
        </property>
@@ -197,7 +127,7 @@
       </widget>
      </item>
      <item row="1" column="7">
-      <widget class="QLabel" name="label_10">
+      <widget class="QLabel" name="labelPeriod">
        <property name="text">
         <string>0</string>
        </property>
@@ -207,7 +137,7 @@
       </widget>
      </item>
      <item row="1" column="3">
-      <widget class="QLabel" name="label_8">
+      <widget class="QLabel" name="labelKi">
        <property name="text">
         <string>0</string>
        </property>
@@ -257,7 +187,77 @@
       </widget>
      </item>
      <item row="1" column="11">
-      <widget class="QLabel" name="label_24">
+      <widget class="QLabel" name="labelStallWhenRun">
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="9">
+      <widget class="QLabel" name="labelSpeedMin">
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="9">
+      <widget class="QLabel" name="label_19">
+       <property name="text">
+        <string>Sped Min.</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="10">
+      <widget class="QLabel" name="label_20">
+       <property name="text">
+        <string>StallOnStart</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Avg. Speed</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Rounds</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>Kp</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="labelAvgSpeed">
        <property name="text">
         <string>0</string>
        </property>
